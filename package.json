@@ -1,0 +1,22 @@
+{
+  "name": "catchemallfighter",
+  "version": "1.0.0",
+  "description": "Fighter Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BakerDavid/catchemallfighter.git"
+  },
+  "author": "70th Crew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BakerDavid/catchemallfighter/issues"
+  },
+  "homepage": "https://github.com/BakerDavid/catchemallfighter#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
