@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Poke Fighter</title>
-</head>
-<body>
-
-<h1>Poke Fighter</h1>
-<button type="button">Fight a few of them!</button>
-
-</body>
-</html>
+<link rel="stylesheet" href="app.css">
+	<title> Fighter</title>
+<div>	
+	<body>
+		<h1 id= "endmessage">
+			PREPARE TO FIGHT
+		</h1>
+		<div>
+			<h3>
+				Player Health
+			</h3>
+			<progress id="playerhealth" value="100" max="100"></progress>
+		</div>
+		<div>
+			<h3>
+				Enemy Health
+			</h3>
+			<progress id="targethealth" value="100" max="100"></progress>
+		</div>
+		<p>
+			<button id="attack"> "Attack" </button>
+		</p>
+		<script src="index.js"></script>
+	</body>
+</div>
