@@ -9,7 +9,7 @@ var target = {
 	hp: 100,
 	max_hp:100,
 	defence:1,
-	stare: [14,16,18]
+	stare: [4,6,8]
 }
 
 var targethealth = document.getElementById("targethealth");
