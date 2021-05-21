@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/clicked', (req, res) => {
-  res.send(200)
+app.post('/attack', (req, res) => {
+  res.sendStatus(200)
+});
+
+app.post('/reset', (req, res) => {
+  res.sendStatus(200)
 });
