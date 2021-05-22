@@ -28,19 +28,6 @@ function targetattack(input) {
 	return player.hp - (randam - player.defence);
 };
 
-// document.getElementById("attack").onclick = function(){
-//     target.hp = playerattack(player.smack);   
-//     targethealth.value = target.hp
-//     setTimeout(function() {player.hp = targetattack(target.stare), playerhealth.value = player.hp; }, 800);
-    
-
-//     if(player.hp <= 0) {
-//     	document.getElementById("endmessage").innerHTML="You have died!";
-//     } 
-//     if(target.hp <= 0) {
-//     	document.getElementById("endmessage").innerHTML="You won!";
-//     }
-// };
 
 function updateValues() { 
 	target.hp = playerattack(player.smack); 
@@ -55,6 +42,7 @@ function updateValues() {
     	document.getElementById("endmessage").innerHTML="You won!";
     }	
 }
+
 function updateValues1() {
 	if(target.hp > 0){
 		player.hp = targetattack(target.stare);  
@@ -121,3 +109,17 @@ reset.addEventListener('click', function(e) {
 		  document.getElementById("distarget").innerHTML = target.max_hp;
     });
 });
+
+var modal = document.getElementById("modal");
+
+var open = document.getElementById("open");
+
+var close = document.getElementById("closemodal");
+
+function openmodal() {
+  modal.classList.remove("modaloff");
+  modal.classList.add("modalon");
+
+ }
+
+ open.onclick = openmodal;

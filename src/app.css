@@ -16,3 +16,14 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+.modaloff {
+  display: none;
+}
+
+.modalon {
+  display: block;
+  position: center;
+  outline: 10px;
+  outline-color: red;
+}
