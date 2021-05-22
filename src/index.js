@@ -90,7 +90,7 @@ attack.addEventListener('click', function(e) {
         setTimeout(updateValues1, 600);
     	document.getElementById("attack").disabled = true;
     setTimeout(function(){document.getElementById("attack").disabled = false;},800);
-    setTimeout(function(){if(player.hp, target.hp <=0) {
+    setTimeout(function(){if(player.hp <= 0 || target.hp <= 0) {
     	document.getElementById("attack").disabled = true;
     	}
 	}, 802)
@@ -118,6 +118,6 @@ reset.addEventListener('click', function(e) {
        	document.getElementById("endmessage").innerHTML="PREPARE TO FIGHT"
        	document.getElementById("attack").disabled = false;
        	document.getElementById("displayer").innerHTML = player.max_hp; 
-		document.getElementById("distarget").innerHTML = target.max_hp;
+		  document.getElementById("distarget").innerHTML = target.max_hp;
     });
 });
