@@ -7,7 +7,25 @@
 		<h1 id= "endmessage">
 			FIGHT
 		</h1>
-		<div>
+		<div class="flex-container">
+			<div class="flex-child">
+				<h3>
+				Player Health
+				</h3>
+				<progress id="playerhealth" value="100" max="100"></progress> 
+				<span id="displayer"></span>
+			</div>
+			<div class="flex-child float-container">
+				<div class="float-child">
+					<h3>
+					Enemy Health
+					</h3>
+					<progress id="targethealth" value="100" max="100"></progress>
+					<span id="distarget"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 	<div>
 			<h3>
 				Player Health
 			</h3>
@@ -20,11 +38,11 @@
 			</h3>
 			<progress id="targethealth" value="100" max="100"></progress>
 			<span id="distarget"></span>
-		</div>
-		<p>
+		</div> -->
+		<div>
 			<button id="attack"> "Attack" </button>
 			<button id="reset"> "Reset" </button>
-		</p>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </div>

@@ -4,7 +4,7 @@
   border: 5px solid gray;
   margin: 0;
 }
-
+/*
 .left {
 	margin-left: auto;
 	margin-top: 50px;
@@ -15,4 +15,20 @@
 	margin-right: auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
+}*/
+
+.flex-container {
+    display: flex;
 }
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.float-child {
+    float: right;
+}  
