@@ -84,6 +84,9 @@ app.post('/attack', (req, res) => {
   res.sendStatus(200)
 });
 
+
 app.post('/reset', (req, res) => {
+  target.hp = target.max_hp
+  player.hp = player.max_hp
   res.sendStatus(200)
 });
