@@ -78,11 +78,10 @@ app.get('/updateValues', (req,res) => {
 });
 
 app.post('/attack', (req, res) => {
+  target.hp = playerattack(player.smack);
+  player.hp = targetattack(target.stare);
+  console.log('target:', target, 'player:', player);
   res.sendStatus(200)
-  .then(function(response) {
-        setTimeout(updateValues, 00);
-        setTimeout(updateValues1, 600);
-    })
 });
 
 app.post('/reset', (req, res) => {
